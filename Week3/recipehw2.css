@@ -1,0 +1,27 @@
+body
+header
+img {
+height:500px;
+}
+nav a img {
+	width:24%;
+}
+section a{
+	width:24%;
+	margin:0 0.15%;
+  	float: left;
+  	display:block;
+  	text-align: center;
+  	text-decoration: none;
+}
+
+section a:hover {
+	background-color: Tomato;
+	color:white;
+}
+
+footer {
+	min-height: 75px;
+	opacity:0.3;
+	background-color: Orange;
+}
