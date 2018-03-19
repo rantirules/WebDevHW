@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>moda2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="modatwo.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.div_sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.div_wide {font-family: "Montserrat", sans-serif;}
+</style>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+<body class="divcontent" style="max-width:1200px">
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="divbar div_top div_hide-large div_black div_xlarge">
+  <div class="divbar-item div_padding-24 div_wide">MODA</div>
+  <a href="javascript:void(0)" class="divbar-item div_button div_padding-24 div_right" onclick="openit()"></a>
+</header>
+
+<!-- !PAGE CONTENT! -->
+<div class="div_main" style="margin-left:250px">
+
+  <!-- Top header -->
+  <header class="div_container div_xlarge">
+    <p class="div_left">MODA / Menswear / Jeans</p>
+    <p class="div_right">
+    </p>
+  </header>
+  <div class="div_container div_text-grey" id="jeans">
+ 
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="modaman2.png" alt="man" height="525">
+</div>
+<span onclick="openNav()">Press to open sidebar</span>
+<div id="main">
+</div>
+
+
+  <div class="div_row div_grayscale">
+    <div class="div_col l3 s6">
+      <div class="div_container">
+        <img src="menjeans_1.jpg" style="width:100%">
+        <p> Stonewash blue jeans <br><b>$54.99</b></p>
+      </div>
+      <div class="div_container">
+        <img src="menjeans_2.jpg" style="width:100%">
+        <p> MODA classic jeans<br><b>$59.99</b></p>
+      </div>
+    </div>
+
+    <div class="div_col l3 s6">
+      <div class="div_container">
+        <div class="div_display-container">
+          <img src="menjeans_3.jpg" style="width:100%">
+        </div>
+        <p>Everyday jeans <br><b>$39.99</b></p>
+      </div>
+      <div class="div_container">
+        <img src="menjeans_4.jpg" style="width:100%">
+        <p>Dark Classic Jeans <br><b>$60.99</b></p>
+      </div>
+    </div>
+
+    <div class="div_col l3 s6">
+      <div class="div_container">
+        <img src="menjeans_5.jpg" style="width:100%">
+        <p>Almost Black Classic Jeans<br><b>$79.99</b></p>
+      </div>
+      <div class="div_container">
+        <div class="div_display-container">
+          <img src="menjeans_6.jpg" style="width:100%">
+        </div>
+        <p>Classic Blue Jeans<br><b class="div_text-red">$99.99</b></p>
+      </div>
+    </div>
+
+    <div class="div_col l3 s6">
+      <div class="div_container">
+        <img src="menjeans_7.jpg" style="width:100%">
+        <p>Vintage Pale Blue Jeans<br><b>$99.99</b></p>
+      </div>
+      <div class="div_container">
+        <img src="menjeans_8.jpg" style="width:100%">
+        <p>MODA Medium Blue Jeans<br><b>$55.99</b></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
