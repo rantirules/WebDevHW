@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+ {
+  box-sizing: border-box;
+}
+
+#usersearch {
+  width: 98%; 
+  font-size: 1.5em;
+ padding: 10px;
+}
+
+#clotheslist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#clotheslist li a {
+  border: 1px solid #ddd;
+  background-color: #4286f4;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block
+}
+
+#clotheslist li a:hover {
+  background-color: #5DADE2;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<h2>Clothes</h2>
+
+<input type="text" id="usersearch" onkeyup="myFunction()" placeholder="Search for clothing items">
+
+<ul id="clotheslist">
+<li><a href = "#"> Trousers </a> </li>
+	<li><a href = "#"> Shorts </a> </li>
+	<li><a href = "#"> Skirts </a> </li>
+	<li><a href = "#"> Shirts </a> </li>
+	<li><a href = "#"> Jeans </a> </li>
+	<li><a href = "#"> Dresses </a> </li>
+	<li><a href = "#"> Shoes </a> </li>
+	<li><a href = "#"> Bags </a> </li>
+	<li><a href = "#"> Scarves </a> </li>
+	<li><a href = "#"> Hats </a> </li>
+	<li><a href = "#"> Necklaces </a> </li>
+	<li><a href = "#"> Watches </a> </li>
+	<li><a href = "#"> Socks </a> </li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("usersearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("clotheslist");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+</html>
